@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+    <LinearLayout
+        android:id="@+id/linearlayout_detail"
+        android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:paddingLeft="3dip"
+		android:paddingRight="3dip"
+		android:paddingTop="1dip"
+		android:paddingBottom="1dip">
+        <RelativeLayout android:layout_width="match_parent" 
+            android:layout_height="30dip"  
+            android:background="#555555"
+            android:id="@+id/relativeLayout_detail">
+            <TextView android:textSize="7pt" 
+                android:layout_alignParentLeft="true" 
+                android:id="@+id/textView1" 
+                android:layout_width="wrap_content" 
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="进程名称" />
+            <Button
+                android:id="@+id/detail_killProcessButton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="0dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="0dip"
+                android:text="强制结束"
+                android:textColor="#cc0033"
+                android:textSize="5pt" />
+        </RelativeLayout>
+		<!-- 进程名称具体显示 -->
+        <TextView 
+            android:id="@+id/detail_processName"
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+               
+        <TextView 
+            android:text="版权信息"
+            android:textSize="7pt" 
+            android:layout_alignParentLeft="true"
+            android:layout_width="fill_parent" 
+            android:layout_height="25dip"   
+            android:gravity="center_vertical"
+            android:background="#555555"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+        <!-- 版权信息具体显示 -->
+        <TextView 
+            android:id="@+id/detail_copyright"
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+        
+        <TextView 
+            android:text="安装目录"
+            android:textSize="7pt" 
+            android:layout_alignParentLeft="true"
+            android:layout_width="fill_parent" 
+            android:layout_height="25dip"   
+            android:gravity="center_vertical"
+            android:background="#555555"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+        <!-- 安装目录具体显示 -->
+        <TextView 
+            android:id="@+id/detail_installLocation"
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+         
+        <TextView 
+            android:text="数据目录"
+            android:textSize="7pt" 
+            android:layout_alignParentLeft="true"
+            android:layout_width="fill_parent" 
+            android:layout_height="25dip"   
+            android:gravity="center_vertical"
+            android:background="#555555"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+        <!-- 数据目录具体显示 -->
+        <TextView 
+            android:id="@+id/detail_dataLocation"
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+
+        <TextView 
+            android:text="文件大小"
+            android:textSize="7pt" 
+            android:layout_alignParentLeft="true"
+            android:layout_width="fill_parent" 
+            android:layout_height="25dip"   
+            android:gravity="center_vertical"
+            android:background="#555555"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+        <!-- 文件大小具体显示 -->
+        <TextView 
+            android:id="@+id/detail_size"
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+
+        <TextView 
+            android:text="拥有权限"
+            android:textSize="7pt" 
+            android:layout_alignParentLeft="true"
+            android:layout_width="fill_parent" 
+            android:layout_height="25dip"   
+            android:gravity="center_vertical"
+            android:background="#555555"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+        <!-- 程序拥有权限具体显示 -->
+        <TextView 
+            android:id="@+id/detail_permission"
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+  
+        <TextView 
+            android:text="服务信息"
+            android:textSize="7pt" 
+            android:layout_alignParentLeft="true"
+            android:layout_width="fill_parent" 
+            android:layout_height="25dip"   
+            android:gravity="center_vertical"
+            android:background="#555555"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+        <!-- 服务信息具体显示 -->
+        <TextView 
+            android:id="@+id/detail_service"
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+  
+        <TextView 
+            android:text="活动信息"
+            android:textSize="7pt" 
+            android:layout_alignParentLeft="true"
+            android:layout_width="fill_parent" 
+            android:layout_height="25dip"   
+            android:gravity="center_vertical"
+            android:background="#555555"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+        <!-- 活动信息具体显示 --> 
+        <TextView 
+            android:id="@+id/detail_activity"
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"
+            android:paddingTop="3dip" 
+            android:paddingBottom="3dip" />
+    </LinearLayout>
+
+</ScrollView>

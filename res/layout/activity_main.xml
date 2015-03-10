@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    >
+    <!-- 上面scrollbars是滚动条形式None（无滚动条）Horizontal（水平滚动条）Vertical（垂直）Both（水平和垂直） -->
+    <!-- ListView用来显示所有进程,layout_above指ListView显示在relativelayout_mian之上     -->
+    <!-- 下方的按钮，其中alignParentBottom使按钮隐藏时也不占屏幕空间 -->
+
+<RelativeLayout
+        android:id="@+id/relativelayout_mian"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" >
+	<!-- 新添功能，可用内存显示********************************************************************* --> 
+        <TextView
+            android:id="@+id/myMessage_internalMemory"
+            android:textSize="7pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前系统可用内存为：" />
+        
+        <TextView  
+            android:id="@+id/showMemory"
+            android:text="0MB"
+            android:textSize="7pt"
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:layout_toRightOf="@id/myMessage_internalMemory" />  
+<!-- 新添功能，可用内存显示********************************************************************* -->
+
+        <Button
+            android:id="@+id/myButton_killAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:text="全部结束" />
+
+        <Button
+            android:id="@+id/myButton_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:text="刷新" />
+
+        <ListView
+            android:id="@id/android:list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/myButton_killAll"
+            android:layout_below="@id/myMessage_internalMemory"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" >
+
+        </ListView>
+
+    </RelativeLayout>
+</RelativeLayout>
